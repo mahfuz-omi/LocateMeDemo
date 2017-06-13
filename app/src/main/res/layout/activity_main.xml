@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/maps_phone"
+    tools:context="com.example.omi.locatemedemo.MainActivity">
+
+
+
+
+    <info.hoang8f.widget.FButton
+        android:padding="2dp"
+        android:id="@+id/sendLocationButton"
+        android:background="@color/colorLightBlue"
+        android:layout_centerInParent="true"
+        android:text="Send Location via SMS"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:buttonColor="@color/fbutton_color_orange"
+         />
+
+
+    <info.hoang8f.widget.FButton
+        android:layout_alignLeft="@id/sendLocationButton"
+        android:layout_alignRight="@id/sendLocationButton"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:id="@+id/getLocationButton"
+        android:layout_below="@id/sendLocationButton"
+        android:text="Get Location from SMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

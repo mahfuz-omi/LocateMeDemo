@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.omi.locatemedemo">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SendLocationActivity"
+            android:label="Send Location"
+            android:parentActivityName=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAh3JhXA80wAJStU-t26vKkyeRIP_biiR4" />
+
+        <activity
+            android:name=".GetLocationActivity"
+            android:label="Select SMS"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowLocationActivity"
+            android:label="Show Location"
+            android:parentActivityName=".GetLocationActivity" />
+        <activity android:name=".UserManualActivity"
+            android:label="User Manual"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>
